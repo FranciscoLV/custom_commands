@@ -7,5 +7,5 @@ function gs() {
 
 #it calls git add
 function ga() {
-  git add
+  git add $1
 }
