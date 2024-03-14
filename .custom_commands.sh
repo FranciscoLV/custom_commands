@@ -18,7 +18,7 @@ function gps() {
 #it calls git commit -m 
 #check if i can remove adding the " "
 function gc() {
-  git commit 
+  git commit -m $1
 }
 
 #it calls git add all and git commit  in one command
