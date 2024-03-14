@@ -16,8 +16,7 @@ function gps() {
 }
 
 #it calls git commit -m 
-#check if i can remove adding the " "
-function gc() {
+function gct () {
   git commit -m $1
 }
 
