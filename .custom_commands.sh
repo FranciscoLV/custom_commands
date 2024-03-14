@@ -24,7 +24,7 @@ function gc() {
 #it calls git add all and git commit  in one command
 function gac () {
     git add .
-    git commit $1 $2
+    git commit -m $1
 }
 
 # it calls git pull
