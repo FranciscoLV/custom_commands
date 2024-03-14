@@ -18,10 +18,10 @@ function gp() {
 #it calls git commit -m 
 #check if i can remove adding the " "
 function gc() {
-  git commit -m "$1"
+  git commit 
 }
 
 function gac () {
     git add .
-    git commit -m "$1"
+    git commit
 }
