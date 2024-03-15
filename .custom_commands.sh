@@ -1,9 +1,25 @@
 #!/bin/bash
 
+### ZSHRC COMMANDS ###
+######################
 #update zshrc file
 function updt() {
   source ~/.zshrc  
 }
+
+### ELIXIR COMMANDS ###
+#######################
+# runs the project
+function run() {
+  iex -S mix phx.server
+}
+
+# runs the project with mps enabled
+function mps_run() {
+  MPS_ENABLED=true iex -S mix phx.server
+}
+
+### GIT COMMANDS ###
 
 # it calls git status
 function gs() {
@@ -41,18 +57,17 @@ function gd() {
   git diff
 }
 
-function run() {
-  iex -S mix phx.server
-}
-
-function mps_run() {
-  MPS_ENABLED=true iex -S mix phx.server
-}
-
+# it returns to main branch
 function main() {
   git checkout main
 }
 
-function gchk() {
+# runs git checkout
+function gch() {
   git checkout $1
+}
+
+# calls git fetch
+function gf() {
+  git fetch
 }
