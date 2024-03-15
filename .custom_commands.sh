@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#update zshrc file
+function updt() {
+  source ~/.zshrc  
+}
+
 # it calls git status
 function gs() {
   git status
@@ -34,4 +39,20 @@ function gpl() {
 #it calls git diff
 function gd() {
   git diff
+}
+
+function run() {
+  iex -S mix phx.server
+}
+
+function mps_run() {
+  MPS_ENABLED=true iex -S mix phx.server
+}
+
+function main() {
+  git checkout main
+}
+
+function gchk() {
+  git checkout $1
 }
