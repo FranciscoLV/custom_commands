@@ -19,6 +19,16 @@ function mps_run() {
   MPS_ENABLED=true iex -S mix phx.server
 }
 
+# runs the project with sbdeco enabled
+function sb_run() {
+  SBDECO_ENABLED=true iex -S mix phx.server
+}
+
+#runs the project with sbdeco and mps enabled
+function sb_mps_run() {
+SBDECO_ENABLED=true MPS_ENABLED=true iex -S mix phx.server
+}
+
 ### GIT COMMANDS ###
 
 # it calls git status
