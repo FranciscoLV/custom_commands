@@ -31,6 +31,11 @@ SBDECO_ENABLED=true MPS_ENABLED=true iex -S mix phx.server
 
 ### GIT COMMANDS ###
 
+# it gives you the log in one line format
+function log() {
+  git log --oneline 
+}
+
 # it calls git status
 function gs() {
   git status
