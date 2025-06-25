@@ -7,6 +7,7 @@ function updt() {
   source ~/.zshrc  
 }
 
+
 ### ELIXIR COMMANDS ###
 #######################
 # runs the project
@@ -29,8 +30,9 @@ function sb_mps_run() {
 SBDECO_ENABLED=true MPS_ENABLED=true iex -S mix phx.server
 }
 
-### GIT COMMANDS ###
 
+### GIT COMMANDS ###
+####################
 # it gives you the log in one line format
 function log() {
   git log --oneline 
@@ -86,3 +88,18 @@ function gch() {
 function gf() {
   git fetch
 }
+
+
+### STACK-PR COMMANDS ###
+#######################
+# it calls stack-pr submit
+function submit() {
+  stack-pr submit --keep-body
+}
+
+# it calls stack-pr view
+function view() {
+  stack-pr view
+}
+
+
